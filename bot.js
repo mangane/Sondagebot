@@ -10,9 +10,13 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
+    if (message.content === ';ping') {
 
-    	message.reply('pong');  	}
+    	message.reply('pong');  
+    
+        if (message.content === ';survey') {
+            message.reply ('En cours de création...');
+    }
 
 });
 
