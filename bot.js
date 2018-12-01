@@ -16,7 +16,7 @@ client.on('message', message => {
     
     if (message.content === ';survey') {
             
-        message.reply ('En cours de création...');
+        message.reply ('$1+');
     }
 
 });
