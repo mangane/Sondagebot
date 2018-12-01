@@ -20,7 +20,7 @@ client.on('message', message => {
         });
     if (message.content === ';say') {
         
-        message.reply('');}
+        message.reply('sayMESSAGE');}
  
 // THIS  MUST  BE  THIS  WAY
 
