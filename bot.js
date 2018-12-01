@@ -16,10 +16,12 @@ client.on('message', message => {
     
     if (message.content === ';help') { 
        
-        message.reply('voici les commandes :```;ping``` ```;help```');    }
+        message.reply('voici les commandes :```;ping``` ```;help```');}
+        });
+    if (message.content === ';survey') {
         
-});
-
+        message.reply(" ");}
+ 
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);
