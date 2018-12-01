@@ -40,7 +40,7 @@ client.on('message', message => {
    if(msg.content === 'S-invite'){
      msg.reply('Voilà le lien d\'invitaton ! : https://discordapp.com/oauth2/authorize?client_id=467650879206588426&scope=bot&permissions=67456064')
    }
-   if(msg.content === 'S-help'){
+   if(msg.content === ';s-help'){
      msg.channel.send({embed: {
     color: 3447003,
     author: {
