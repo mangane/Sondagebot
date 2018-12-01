@@ -19,7 +19,7 @@ client.on('message', message => {
     	message.reply('Bienvenue');  	}
     
 
-    if(;kick) return message.channel.send(noReasonEmbed);
+    if(message.content === ';kick') { return message.channel.send(noReasonEmbed);}
 
   let kickEmbed = new Discord.RichEmbed()
   .setColor(botconfig.success)
