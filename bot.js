@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
 
-   console.log('I am ready!');
+    console.log('I am ready!');
 
 });
 
@@ -12,12 +12,15 @@ client.on('message', message => {
 
     if (message.content === ';ping') {
 
-    	message.reply('pong');  	}
-     
-    if (message.content === ';Bvn') {
-
-    	message.reply('Bienvenue');  	}
+    	message.reply('pong');
     
+       if (message.content === ';bvn') {
+       
+       message.reply('Salut');
+  	} 
+
+});
+
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);
