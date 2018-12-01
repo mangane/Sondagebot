@@ -14,7 +14,7 @@ client.on('message', message => {
 
     	message.reply('pong');  }
     
-    if (message.content === ';survey') {
+    if (message.content === ';survey $1+') {
             
         message.reply ('$1+');
     }
