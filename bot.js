@@ -14,11 +14,7 @@ client.on('message', message => {
 
     	message.reply('pong');
     
-       if (message.content === ';bvn') {
        
-       message.reply('Salut');
-  	} 
-
 });
 
 // THIS  MUST  BE  THIS  WAY
