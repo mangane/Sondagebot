@@ -17,11 +17,12 @@ client.on('message', message => {
     if (message.content === ';help') { 
        
         message.reply('voici les commandes :```;ping``` ```;help```');}
-        });
+        
     
     if (message.content === ';say') {
         
         message.reply('en cours...');}
+    )}
  
 // THIS  MUST  BE  THIS  WAY
 
