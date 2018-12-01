@@ -16,7 +16,8 @@ client.on('message', message => {
     
     if (message.content === ';help') { 
        
-        message.reply('```voici les commandes : !ping 
+        message.reply('```
+                      voici les commandes : !ping 
                       !help```');
         
 });
