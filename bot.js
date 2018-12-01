@@ -18,7 +18,6 @@ client.on('message', message => {
        
         message.reply('voici les commandes :```;ping``` ```;help```');}
         
-    
     if (message.content === ';say') {
         
         message.reply('en cours...');}
