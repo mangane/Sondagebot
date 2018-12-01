@@ -13,6 +13,13 @@ client.on('message', message => {
     if (message.content === ';ping') {
 
     	message.reply('pong');  }
+    
+    if (message.content === ';help') { 
+       
+        message.reply(' ```voici les commandes : 
+                      !ping 
+                      !help ``` ')
+        
 });
 
 // THIS  MUST  BE  THIS  WAY
