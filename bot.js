@@ -14,9 +14,11 @@ client.on('message', message => {
 
     	message.reply('pong');  }
     
-    if (message.content === ';survey $1+') {
-            
-        message.reply ('$1+');
+    if(command === "say") {
+    const sayMessage = args.join(" ");
+    message.delete().catch(O_o=>{});
+    message.channel.send(sayMessage);
+  
     }
 
 });
