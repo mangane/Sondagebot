@@ -14,7 +14,7 @@ client.on('message', message => {
 
     	message.reply('pong');  }
    
-    if(command === "kick") {
+    if(message.content === ";kick") {
 
     if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
 
