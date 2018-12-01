@@ -14,7 +14,7 @@ client.on('message', message => {
 
     	message.reply('pong');  }
     
-    if(command === "kick") {
+    if(command === ";kick") {
     if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to use this!");
     let member = message.mentions.members.first() || message.guild.members.get(args[0]);
