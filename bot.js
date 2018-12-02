@@ -29,7 +29,12 @@ client.on('message', message => {
     .then(function (message){
         message.react("✔")
         message.react("✘")
+ 
+        message.reply('Hey, I\'m a reply!') 
+            .then(sent => console.log(`Sent a reply to ${sent.author.username}`)) 
+            .catch(console.error);
     });
+        
    
     // THIS  MUST  BE  THIS  WAY
 
