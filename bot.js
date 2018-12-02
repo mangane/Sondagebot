@@ -22,7 +22,7 @@ client.on('message', message => {
         
         message.reply('en cours...');}
    
-    if (message.content === ';survey') {
+    if (message.content === ') {
         
 message.channel.sendMessage(message.content);}
     
