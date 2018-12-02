@@ -17,10 +17,8 @@ client.on('message', message => {
     if (message.content === ';help') { 
        
         message.reply('voici les commandes : `;ping` `;help`:wink:');}
-   
 });  
-        
-   // THIS  MUST  BE  THIS  WAY
+         // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);
     
