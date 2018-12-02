@@ -17,11 +17,23 @@ client.on('message', message => {
     if (message.content === ';help') { 
        
         message.reply('voici les commandes : `;ping` `;help`:wink:');}
-       
-    if (message.content === ';say') { 
-     
-        message.reply('message.content'); 
-    } 
+
+    if (message.content.startsWith(';sondage')) {
+    let args = message.content.split(" ").slice(1);
+    let thingToEcho = args.join(" ")
+    var embed = new Discord.RichEmbed()
+        embed.setDescription("Sondage")
+        embed.addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
+        embed.setColor('#01A1FE')
+    message.guild.channels.find("name", "sondage").sendEmbed(embed)
+    .then(function (message){
+        message.react("✔")
+        message.react("✘")
+    }).catch(function() {
+    });
+    }else{
+        message.reply("Tu n'a pas la permission")
+    }
     
     });
     // THIS  MUST  BE  THIS  WAY
