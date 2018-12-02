@@ -21,7 +21,8 @@ client.on('message', message => {
     if (message.content === ';say') {
         
         message.reply('en cours...');}
-if (message.content.startsWith(config.modprefix ; "kick")) {
+
+    if (message.content.startsWith(config.modprefix ; "kick")) {
         if (message.member.roles.find('name', 'Wielder')) {
             let sub = message.content.substring(config.modprefix.length+5);
             let args = sub.split(" ");
