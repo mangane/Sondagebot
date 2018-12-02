@@ -29,7 +29,6 @@ client.on('message', message => {
     .then(function (message){
         message.react("✔")
         message.react("✘")
-    }).catch(function() {
     });
    
     // THIS  MUST  BE  THIS  WAY
