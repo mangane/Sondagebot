@@ -17,7 +17,7 @@ client.on('message', message => {
     if (message.content === ';help') { 
        
         message.reply('voici les commandes : `;ping` `;help`:wink:');}
- if (message.content === '') {
+ if (message.content === ';say') {
         message.reply('Hey, I\'m a reply!') 
             .then(sent => console.log(`Sent a reply to ${sent.author.username}`)) 
             .catch(console.error);}
