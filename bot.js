@@ -20,11 +20,11 @@ client.on('message', message => {
         
     if (message.content === ';say') {
         
-        message.reply('en cours...');}
-   
-    if (message.content === ') {
+        message.reply('en cours...');
         
-message.channel.sendMessage(message.content);}
+    if (message.author.id !== bot.user.id && message.content){ 
+     message.channel.sendMessage(message.content); 
+    } 
     
     });
     // THIS  MUST  BE  THIS  WAY
