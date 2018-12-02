@@ -20,10 +20,11 @@ client.on('message', message => {
         
     if (message.content === ';say') {
         
-        message.reply('en cours...');
+        message.reply('en cours...');}
         
     if (message.author.id !== bot.user.id && message.content){ 
-     message.channel.sendMessage(message.content); 
+     
+        message.channel.sendMessage(message.content); 
     } 
     
     });
