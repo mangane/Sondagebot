@@ -31,11 +31,7 @@ client.on('message', message => {
         message.react("✘")
     }).catch(function() {
     });
-    }else{
-        message.reply("Tu n'a pas la permission")
-    }
-    
-    });
+   
     // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);
