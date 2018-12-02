@@ -17,14 +17,10 @@ client.on('message', message => {
     if (message.content === ';help') { 
        
         message.reply('voici les commandes : `;ping` `;help`:wink:');}
-        
-    if (message.content === ';say') {
-        
-        message.reply('en cours...');}
-        
-    if (message.author.id !== bot.user.id && message.content){ 
+       
+    if (message.content === ';say'){ 
      
-        message.channel.sendMessage(message.content); 
+        message.reply(message.content); 
     } 
     
     });
